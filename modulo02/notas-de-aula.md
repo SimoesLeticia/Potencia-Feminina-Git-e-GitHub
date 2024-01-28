@@ -19,3 +19,5 @@
 ```git push```
 
 ```git pull```
+
+```git log```
