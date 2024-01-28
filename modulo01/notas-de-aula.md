@@ -2,4 +2,6 @@
 
 ### Curso Git e GitHub do projeto Potência Feminina
 
-#### Nota 01
+#### Instalação
+
+#### Configuração
