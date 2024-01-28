@@ -10,3 +10,10 @@
 - **branch:** É uma linha de desenvolvimento independente que permite trabalhar em funcionalidades ou correções sem interferir diretamente na linha principal. Facilita a colaboração e o gerenciamento de alterações.
 - **merge:** É o processo de combinar as alterações de uma branch com outra, resultando em um novo commit que integra as modificações das duas linhas de desenvolvimento.
 - **rebase:** É a ação de pegar uma sequência de commits, "pegá-los" e aplicá-los como se tivessem sido feitos em outro ponto. Ajuda a manter um histórico de commit mais linear e limpo, mas deve ser usado com cuidado para evitar problemas de colaboração.
+
+#### Inicie um projeto
+Cria um repositório Git vazio ou reinicializa um já existente
+git init [diretório]
+
+Clona um repositório em um novo diretório
+git clone [url]
