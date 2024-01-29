@@ -13,7 +13,9 @@
 - **merge:** É o processo de combinar as alterações de uma branch com outra, resultando em um novo commit que integra as modificações das duas linhas de desenvolvimento.
 - **rebase:** É a ação de pegar uma sequência de commits, "pegá-los" e aplicá-los como se tivessem sido feitos em outro ponto. Ajuda a manter um histórico de commit mais linear e limpo, mas deve ser usado com cuidado para evitar problemas de colaboração.
 
----
+<br>
+<div style="background-color: #3498db; height: 1px;"></div>
+
 ### Inicie um projeto
 <table border=\"1\">
 <tr><td>Cria um repositório Git vazio ou reinicializa um já existente.
@@ -24,8 +26,9 @@
 	
 **`git clone [url]`**</td></tr>
 </table>
+<br>
+<div style="background-color: #3498db; height: 1px;"></div>
 
----
 ### Faça uma mudança
 
 .
