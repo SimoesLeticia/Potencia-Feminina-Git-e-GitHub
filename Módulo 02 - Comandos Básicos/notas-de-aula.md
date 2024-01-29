@@ -93,3 +93,21 @@ Reescreve o histórico de commits movendo a branch atual para o topo da branch e
 
 ```git rebase [nome da branch]```
 
+---
+### Sincronize
+
+Adiciona um novo repositório remoto com a URL fornecida.
+
+```git remote add [url]```
+
+Busca as alterações do repositório remoto, atualizando as referências locais sem mesclar automaticamente.
+
+```git fetch``` 
+
+Obtém as mudanças do repositório remoto e mescla automaticamente com a branch local atual.
+
+```git pull``` 
+
+Envia as alterações locais para o repositório remoto associado, atualizando-o com os commits locais.
+
+```git push``` 
