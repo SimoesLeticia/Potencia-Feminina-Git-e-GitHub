@@ -62,6 +62,14 @@ Fornece um histórico de commits simplificado, exibindo cada commit em uma únic
 
 ```git log --oneline```
 
+Exibe informações detalhadas sobre o último commit.
+
+```git show```
+
+Exibe informações detalhadas sobre o commit especificado.
+
+```git show [commit]``` 
+
 ---
 #### Branches e Merging
 
@@ -93,3 +101,43 @@ Reescreve o histórico de commits movendo a branch atual para o topo da branch e
 
 ```git rebase [nome da branch]```
 
+---
+### Sincronize
+
+Adiciona um novo repositório remoto com a URL fornecida.
+
+```git remote add [url]```
+
+Busca as alterações do repositório remoto, atualizando as referências locais sem mesclar automaticamente.
+
+```git fetch``` 
+
+Obtém as mudanças do repositório remoto e mescla automaticamente com a branch local atual.
+
+```git pull``` 
+
+Envia as alterações locais para o repositório remoto associado, atualizando-o com os commits locais.
+
+```git push```
+
+---
+### Desfaça mudanças
+
+Desfaz as alterações no arquivo especificado, mantendo as mudanças no stage.
+
+```git reset [nome do arquivo]``` 
+
+Desfaz todas as alterações no working directory e no stage, retornando ao estado do commit especificado.
+
+```git reset --hard``` 
+
+Cria um novo commit que desfaz as mudanças introduzidas pelo commit especificado.
+
+```git revert [commit]``` 
+
+---
+#### E por último!
+
+Em caso de dúvida, use o git help, ele mostra informações de ajuda para o comando git especificado.
+
+```git [comando] --help```
