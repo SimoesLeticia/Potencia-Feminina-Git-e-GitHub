@@ -61,3 +61,35 @@ Apresenta o histórico de commits do repositório, incluindo detalhes como autor
 Fornece um histórico de commits simplificado, exibindo cada commit em uma única linha com a mensagem resumida.
 
 ```git log --oneline```
+
+---
+#### Branches e Merging
+
+Lista as branches existentes no repositório, indicando a atual com um asterisco.
+
+```git branch```
+
+Cria uma nova branch
+
+```git branch [nome da branch que será criada]```
+
+Muda para a branch especificada.
+
+```git checkout [nome da branch]```
+
+Cria e muda para uma nova branch especificada.
+
+```git checkout -b [nome da branch que será criada]```
+
+Deleta a branch especificada.
+
+```git branch -d [nome da branch]```
+
+Combina as alterações da branch especificada à branch atual.
+
+```git merge [nome da branch]```
+
+Reescreve o histórico de commits movendo a branch atual para o topo da branch especificada.
+
+```git rebase [nome da branch]```
+
