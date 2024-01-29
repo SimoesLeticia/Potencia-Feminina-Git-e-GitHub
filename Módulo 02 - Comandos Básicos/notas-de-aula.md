@@ -15,129 +15,130 @@
 
 ---
 ### Inicie um projeto
-Cria um repositório Git vazio ou reinicializa um já existente.
+<table border=\"1\">
+<tr><td>Cria um repositório Git vazio ou reinicializa um já existente.
 
-```git init [diretório]```
+**`git init [diretório]`**</td></tr>
 
-Clona um repositório em um novo diretório.
+<tr><td>Clona um repositório em um novo diretório.
+	
+**`git clone [url]`**</td></tr>
+</table>
 
-```git clone [url]```
-
----
 ### Faça uma mudança
-Adiciona o arquivo ao staging area para ser incluído no próximo commit.
+<table border=\"1\">
+<tr><td>Adiciona o arquivo ao staging area para ser incluído no próximo commit.
 
-```git add [nome do arquivo]```
+**`git add [nome do arquivo]`**</td></tr>
 
-Adiciona todas as mudanças no diretório de trabalho ao staging area para serem incluídas no próximo commit.
+<tr><td>Adiciona todas as mudanças no diretório de trabalho ao staging area para serem incluídas no próximo commit.
 
-```git add .```
+**`git add .`**</td></tr>
 
-Realiza um commit, adicionando as mudanças previamente preparadas no staging area.
+<tr><td>Realiza um commit, adicionando as mudanças previamente preparadas no staging area.
 
-```git commit -m "[texto do commit]"```
+**`git commit -m "[texto do commit]"`**</td></tr>
 
-Adiciona automaticamente todas as mudanças no diretório de trabalho ao staging area e realiza um commit.
+<tr><td>Adiciona automaticamente todas as mudanças no diretório de trabalho ao staging area e realiza um commit.
 
-```git commit -am "[texto do commit]"```
+**`git commit -am "[texto do commit]"`**</td></tr>
+</table>
 
----
 ### Confira seu repositório
-Exibe o estado atual do repositório, mostrando arquivos modificados, adicionados ou removidos.
+<table border=\"1\">
+<tr><td>Exibe o estado atual do repositório, mostrando arquivos modificados, adicionados ou removidos.
 
-```git status```
+**`git status`**</td></tr>
 
+<tr><td>Mostra as diferenças entre as mudanças no diretório de trabalho e o último commit.
 
-Mostra as diferenças entre as mudanças no diretório de trabalho e o último commit.
+**`git diff`**</td></tr>
 
-```git diff```
+<tr><td>Apresenta o histórico de commits do repositório, incluindo detalhes como autor, data e mensagem de commit.
 
+**`git log`**</td></tr>
 
-Apresenta o histórico de commits do repositório, incluindo detalhes como autor, data e mensagem de commit.
+<tr><td>Fornece um histórico de commits simplificado, exibindo cada commit em uma única linha com a mensagem resumida.
 
-```git log```
+**`git log --oneline`**</td></tr>
 
+<tr><td>Exibe informações detalhadas sobre o último commit.
 
-Fornece um histórico de commits simplificado, exibindo cada commit em uma única linha com a mensagem resumida.
+**`git show`**</td></tr>
 
-```git log --oneline```
+<tr><td>Exibe informações detalhadas sobre o commit especificado.
 
-Exibe informações detalhadas sobre o último commit.
+**`git show [commit]`**</td></tr>
+</table>
 
-```git show```
+### Branches e Merging
+<table border=\"1\">
+<tr><td>Lista as branches existentes no repositório, indicando a atual com um asterisco.
 
-Exibe informações detalhadas sobre o commit especificado.
+**`git branch`**</td></tr>
 
-```git show [commit]``` 
+<tr><td>Cria uma nova branch
 
----
-#### Branches e Merging
+**`git branch [nome da branch que será criada]`**</td></tr>
 
-Lista as branches existentes no repositório, indicando a atual com um asterisco.
+<tr><td>Muda para a branch especificada.
 
-```git branch```
+**`git checkout [nome da branch]`**</td></tr>
 
-Cria uma nova branch
+<tr><td>Cria e muda para uma nova branch especificada.
 
-```git branch [nome da branch que será criada]```
+**`git checkout -b [nome da branch que será criada]`**</td></tr>
 
-Muda para a branch especificada.
+<tr><td>Deleta a branch especificada.
 
-```git checkout [nome da branch]```
+**`git branch -d [nome da branch]`**</td></tr>
 
-Cria e muda para uma nova branch especificada.
+<tr><td>Combina as alterações da branch especificada à branch atual.
 
-```git checkout -b [nome da branch que será criada]```
+**`git merge [nome da branch]`**</td></tr>
 
-Deleta a branch especificada.
+<tr><td>Reescreve o histórico de commits movendo a branch atual para o topo da branch especificada.
 
-```git branch -d [nome da branch]```
+**`git rebase [nome da branch]`**</td></tr>
+</table>
 
-Combina as alterações da branch especificada à branch atual.
-
-```git merge [nome da branch]```
-
-Reescreve o histórico de commits movendo a branch atual para o topo da branch especificada.
-
-```git rebase [nome da branch]```
-
----
 ### Sincronize
+<table border=\"1\">
+<tr><td>Adiciona um novo repositório remoto com a URL fornecida.
 
-Adiciona um novo repositório remoto com a URL fornecida.
+**`git remote add [url]`**</td></tr>
 
-```git remote add [url]```
+<tr><td>Busca as alterações do repositório remoto, atualizando as referências locais sem mesclar automaticamente.
 
-Busca as alterações do repositório remoto, atualizando as referências locais sem mesclar automaticamente.
+**`git fetch`**</td></tr>
 
-```git fetch``` 
+<tr><td>Obtém as mudanças do repositório remoto e mescla automaticamente com a branch local atual.
 
-Obtém as mudanças do repositório remoto e mescla automaticamente com a branch local atual.
+**`git pull`**</td></tr>
 
-```git pull``` 
+<tr><td>Envia as alterações locais para o repositório remoto associado, atualizando-o com os commits locais.
 
-Envia as alterações locais para o repositório remoto associado, atualizando-o com os commits locais.
+**`git push`**</td></tr>
+</table>
 
-```git push```
-
----
 ### Desfaça mudanças
+<table border=\"1\">
+<tr><td>Desfaz as alterações no arquivo especificado, mantendo as mudanças no stage.
 
-Desfaz as alterações no arquivo especificado, mantendo as mudanças no stage.
+**`git reset [nome do arquivo]`**</td></tr>
 
-```git reset [nome do arquivo]``` 
+<tr><td>Desfaz todas as alterações no working directory e no stage, retornando ao estado do commit especificado.
 
-Desfaz todas as alterações no working directory e no stage, retornando ao estado do commit especificado.
+**`git reset --hard`**</td></tr> 
 
-```git reset --hard``` 
+<tr><td>Cria um novo commit que desfaz as mudanças introduzidas pelo commit especificado.
 
-Cria um novo commit que desfaz as mudanças introduzidas pelo commit especificado.
+**`git revert [commit]`**</td></tr>
+</table>
 
-```git revert [commit]``` 
+### E por último!
+<table border=\"1\">
+<tr><td>Em caso de dúvida, use o git help, ele mostra informações de ajuda para o comando git especificado.
 
----
-#### E por último!
-
-Em caso de dúvida, use o git help, ele mostra informações de ajuda para o comando git especificado.
-
-```git [comando] --help```
+**`git [comando] --help`**</td></tr>
+</table>
